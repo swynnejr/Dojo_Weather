@@ -8,74 +8,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h1>DojoWeather</h1>
-        <ul>
-            <li>Burbank</li>
-            <li>Chicago</li>
-            <li>Dallas</li>
-        </ul>
-    </nav>
-    <header>
-        <h2>San Jose</h2>
-        <span>
-            <p>show temperature in </p>
-            <select name="temperature" id="temperature"><option value="C°"></option><option value="F°"></option></select>
-        </span>
-    </header>
-    <main>
-        <section class="day" id="today">
-            <div>
-                <h3>Today</h3>
-                <img src="./images/some_rain.png" alt="cloud with rain">
-                <p>some rain</p>
-            </div>
-            <span class="temps">
-                <p class="high-temp">24°</p>
-                <p class="low-temp">18°</p>
-            </span>
-        </section>
-        <section class="day" id="tomorrow">
-            <div>
-                <h3>Tomorrow</h3>
-                <img src="./images/some_sun.png" alt="sunny">
-                <p>some sun</p>
-            </div>
-            <span class="temps">
-                <p class="high-temp">27°</p>
-                <p class="low-temp">19°</p>
-            </span>
-        </section>
-        <section class="day" id="Friday">
-            <div>
-                <h3>Friday</h3>
-                <img src="./images/some_clouds.png" alt="cloudy">
-                <p>some clouds</p>
-            </div>
-            <span class="temps">
-                <p class="high-temp">21°</p>
-                <p class="low-temp">16°</p>
-            </span>
-        </section>
-        <section class="day" id="Saturday">
-            <div>
-                <h3>Saturday</h3>
-                <img src="./images/some_sun.png" alt="sunny">
-                <p>some sun</p>
-            </div>
-            <span class="temps">
-                <p class="high-temp">26°</p>
-                <p class="low-temp">21°</p>
-            </span>
-        </section>
-    </main>
-    <footer>
-        <img src="./images/cookie.png" alt="cookie">
-        <div>
-            <h4>Stop! Cookie time</h4>
-            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features, and to analyse our traffic. <a href="#">Read more...</a></p>
+    <nav class="flexed">
+        <div class="container flexed">
+            <h1>DojoWeather</h1>
+            <ul class="flexed">
+                <li>Burbank</li>
+                <li>Chicago</li>
+                <li>Dallas</li>
+            </ul>
         </div>
-        <button>I accept</button>
+    </nav>
+    <header class="flexed">
+        <div class="container flexed" id="header">
+            <h2>San Jose</h2>
+            <span class="flexed">
+                <p>show temperature in </p>
+                <select name="temperature" id="temperature">C°
+                    <option value="C°">C°</option>
+                    <option value="F°">F°</option>
+                </select>
+            </span>
+        </div>
+    </header>
+    <main class="flexed">
+        <div class="container flexed">
+            <section class="day" id="today">
+                <div>
+                    <h3>Today</h3>
+                    <img src="./images/some_rain.png" alt="cloud with rain">
+                    <p>some rain</p>
+                </div>
+                <span class="temps flexed">
+                    <p class="high-temp">24°</p>
+                    <p class="low-temp">18°</p>
+                </span>
+            </section>
+            <section class="day" id="tomorrow">
+                <div>
+                    <h3>Tomorrow</h3>
+                    <img src="./images/some_sun.png" alt="sunny">
+                    <p>some sun</p>
+                </div>
+                <span class="temps flexed">
+                    <p class="high-temp">27°</p>
+                    <p class="low-temp">19°</p>
+                </span>
+            </section>
+            <section class="day" id="Friday">
+                <div>
+                    <h3>Friday</h3>
+                    <img src="./images/some_clouds.png" alt="cloudy">
+                    <p>some clouds</p>
+                </div>
+                <span class="temps flexed">
+                    <p class="high-temp">21°</p>
+                    <p class="low-temp">16°</p>
+                </span>
+            </section>
+            <section class="day" id="Saturday">
+                <div>
+                    <h3>Saturday</h3>
+                    <img src="./images/some_sun.png" alt="sunny">
+                    <p>some sun</p>
+                </div>
+                <span class="temps flexed">
+                    <p class="high-temp">26°</p>
+                    <p class="low-temp">21°</p>
+                </span>
+            </section>
+        </div>
+    </main>
+    <footer class="flexed">
+        <div class="container flexed" id="footer-div">
+            <img src="./images/cookie.png" alt="cookie">
+            <div>
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features, and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button>I Accept</button>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
