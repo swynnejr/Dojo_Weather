@@ -20,7 +20,6 @@ function accept() {
     cookieDiv.remove();
 }
 
-
 // Convert temp from C to F
 
 function convert(element) {
@@ -32,9 +31,7 @@ function convert(element) {
             tempSpan.innerText = (f2c(tempVal));
         } else {
             tempSpan.innerText = (c2f(tempVal));
-
         }
-        
     }
 }
 
