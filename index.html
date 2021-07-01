@@ -12,9 +12,9 @@
         <div class="container flexed">
             <h1>DojoWeather</h1>
             <ul class="flexed">
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
+                <li onclick="loadingB()">Burbank</li>
+                <li onclick="loadingC()">Chicago</li>
+                <li onclick="loadingD()">Dallas</li>
             </ul>
         </div>
     </nav>
@@ -23,9 +23,9 @@
             <h2>San Jose</h2>
             <span class="flexed">
                 <p>show temperature in </p>
-                <select name="temperature" id="temperature">C°
-                    <option value="C°">C°</option>
-                    <option value="F°">F°</option>
+                <select name="temperature" id="temperature" onchange="convert(this)">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
                 </select>
             </span>
         </div>
@@ -39,8 +39,8 @@
                     <p>some rain</p>
                 </div>
                 <span class="temps flexed">
-                    <p class="high-temp">24°</p>
-                    <p class="low-temp">18°</p>
+                    <p class="high-temp" id="temp1">24</p>
+                    <p class="low-temp"  id="temp2">18</p>
                 </span>
             </section>
             <section class="day" id="tomorrow">
@@ -50,8 +50,8 @@
                     <p>some sun</p>
                 </div>
                 <span class="temps flexed">
-                    <p class="high-temp">27°</p>
-                    <p class="low-temp">19°</p>
+                    <p class="high-temp" id="temp3">27</p>
+                    <p class="low-temp" id="temp4">19</p>
                 </span>
             </section>
             <section class="day" id="Friday">
@@ -61,8 +61,8 @@
                     <p>some clouds</p>
                 </div>
                 <span class="temps flexed">
-                    <p class="high-temp">21°</p>
-                    <p class="low-temp">16°</p>
+                    <p class="high-temp" id="temp5">21</p>
+                    <p class="low-temp" id="temp6">16</p>
                 </span>
             </section>
             <section class="day" id="Saturday">
@@ -72,8 +72,8 @@
                     <p>some sun</p>
                 </div>
                 <span class="temps flexed">
-                    <p class="high-temp">26°</p>
-                    <p class="low-temp">21°</p>
+                    <p class="high-temp" id="temp7">26</p>
+                    <p class="low-temp" id="temp8">21</p>
                 </span>
             </section>
         </div>
@@ -85,7 +85,7 @@
                 <h4>Stop! Cookie time</h4>
                 <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features, and to analyse our traffic. <a href="#">Read more...</a></p>
             </div>
-            <button>I Accept</button>
+            <button onclick="accept()">I Accept</button>
         </div>
     </footer>
     <script src="script.js"></script>

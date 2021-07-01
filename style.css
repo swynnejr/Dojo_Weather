@@ -81,6 +81,10 @@ h3, .day p, .day span {
     font-weight: bolder;
 }
 
+.high-temp::after, .low-temp::after {
+    content: "°";
+}
+
 #footer-div {
     border: 3px solid black;
     background-color: rgb(230, 225, 225);
